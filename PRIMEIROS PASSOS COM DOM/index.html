@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Página</title>
+
+    <style>
+        /* Adicione estilos CSS aqui, se necessário */
+    </style>
+</head>
+<body>
+
+    <header>
+       
+    </header>
+
+    <main>
+      
+        <h1 class="titulo-principal azul ativo">Esse é o título</h1>
+
+
+        <h1 id="tituloPrincipal" class="titulo-principal azul ativo">Esse é o título</h1>
+    </main>
+
+    <footer>
+      
+    </footer>
+
+    <script>
+        // Retorne a URL da página atual
+      const  hrefPagina= window.location.href;
+      console.log(hrefPagina)
+
+        // Selecione o primeiro elemento da página que possui a classe 'ativo'
+        var elementoAtivo = document.querySelector('.ativo');
+        console.log("Elemento ativo:", elementoAtivo.innerText);
+
+        // Retorne a linguagem do navegador
+        console.log("Linguagem do navegador:", navigator.language);
+
+        // Retorne a largura da janela
+        console.log("Largura da janela:", window.innerWidth);
+
+
+         
+
+         // Selecione o elemento com o id 'tituloPrincipal'
+         var titulo = document.getElementById('tituloPrincipal');
+
+        // Retorne o texto do elemento
+        console.log("Texto do título:", titulo.innerText);
+
+        // Retorne as classes do elemento
+        console.log("Classes do título:", titulo.classList);
+
+        // Retorne o id do elemento
+        console.log("ID do título:", titulo.id);
+
+        // Retorne a altura do elemento
+        console.log("Altura do título:", titulo.offsetHeight);
+
+        // Adicione um evento de clique ao título
+        titulo.addEventListener('click', clicarNoTitulo);
+
+        // Função que será chamada quando o título for clicado
+        function clicarNoTitulo() {
+        console.log("O título foi clicado!");
+        }
+    </script>
+</body>
+</html>
